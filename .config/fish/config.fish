@@ -39,6 +39,10 @@ function gac --description "Stage all modified files and commit with provided co
 	git commit -m "$argv"
 end
 
+function brewinstall --description "brew bundle install --global"
+	brew bundle install --global
+end
+
 # Navigate to different Airthings directories.
 # Accepts a single argument:
 #	at app:		Main Airthings Wave iOS application
