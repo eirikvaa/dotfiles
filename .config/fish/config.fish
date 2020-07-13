@@ -18,6 +18,9 @@ set -g fish_prompt_pwd_dir_length 3
 set -g theme_date_format "+%a %H:%M"
 
 # Abbrevation
+
+## Git
+
 abbr -a -g gs git status -bs
 abbr -a -g gp git push
 abbr -a -g gd git diff
@@ -39,9 +42,15 @@ function gac --description "Stage all modified files and commit with provided co
 	git commit -m "$argv"
 end
 
+## Brew
+
+abbr -a -g bb brew bundle --global 
+
 function brewinstall --description "brew bundle install --global"
-	brew bundle install --global
+	bb --global
 end
+
+# Functions
 
 # Navigate to different Airthings directories.
 # Accepts a single argument:
