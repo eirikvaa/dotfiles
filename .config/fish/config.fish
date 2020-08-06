@@ -42,6 +42,14 @@ function gac --description "Stage all modified files and commit with provided co
 	git commit -m "$argv"
 end
 
+## Mint
+
+function mintinstall --description "mint boostrap --link for ~/.mintconfig/Mintfile"
+	cd ~/.mintconfig
+	mint bootstrap --link
+	cd - # Navigate back to where I was
+end
+
 ## Brew
 
 abbr -a -g bb brew bundle --global 
