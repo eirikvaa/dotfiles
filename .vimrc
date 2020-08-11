@@ -8,6 +8,7 @@ Plug 'aserebryakov/vim-todo-lists'
 Plug 'derekwyatt/vim-scala'
 Plug 'gabrielelana/vim-markdown'
 Plug 'dag/vim-fish'
+Plug 'vim-ruby/vim-ruby'
 
 call plug#end()
 
