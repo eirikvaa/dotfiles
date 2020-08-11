@@ -140,3 +140,6 @@ function o
 		echo "The 'o' function only accepts a single argument."
 	end
 end
+
+# Run different executables
+set PATH ~/Documents/Utvikling/macOS/AirthingsExtraHours/.build/debug/ $PATH
