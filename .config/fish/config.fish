@@ -142,4 +142,4 @@ function o
 end
 
 # Run different executables
-set PATH ~/Documents/Utvikling/macOS/AirthingsExtraHours/.build/debug/ $PATH
+set PATH ~/Documents/Utvikling/macOS/Overtime/.build/debug/ $PATH
