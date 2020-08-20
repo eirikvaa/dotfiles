@@ -4,6 +4,12 @@ function edit-fish-config
 	. ~/.config/fish/config.fish
 end
 
+# Stuff
+set -g -x SAMFDB_DEV_PASS "passord"
+
+# Source RVM
+rvm default
+
 # Disable the greeting message when starting a new shell session
 function fish_right_prompt; end
 
@@ -30,7 +36,7 @@ abbr -a -g gdc git diff --cached
 abbr -a -g config /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $argv
 
 function gl --description "Show git log in a nice format."
-	git log --pretty="%C(Yellow)%h %C(Blue)%ad %C(reset)%s" --graph --date=human
+	git log --pretty="%C(Yellow)%h %C(Blue)%ad %C(reset)%s" --date=human --tags
 end
 
 function gaa --description "Stage all modified files."
