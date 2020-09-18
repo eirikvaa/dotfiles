@@ -23,6 +23,9 @@ set -g theme_display_git_stashed_verbose yes
 set -g fish_prompt_pwd_dir_length 3
 set -g theme_date_format "+%a %H:%M"
 
+# Environment variables
+set -Ux SAMFDB_DEV_PASS 'passord'
+
 # Abbrevation
 
 ## Git
@@ -54,14 +57,6 @@ function mintinstall --description "mint boostrap --link for ~/.mintconfig/Mintf
 	cd ~/.mintconfig
 	mint bootstrap --link
 	cd - # Navigate back to where I was
-end
-
-## Brew
-
-abbr -a -g bb brew bundle --global 
-
-function brewinstall --description "brew bundle install --global"
-	bb --global
 end
 
 # Functions
